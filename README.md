@@ -1,6 +1,6 @@
-# courgetteparallelexecutiontemplate
+# CucumberTestTemplate
 
-
+Ready to go test template for Cucumber with Selenium
 
 ## Getting started
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.thetestpeople.com/matthew-mccormick/courgetteparallelexecutiontemplate.git
+git remote add origin https://gitlab.thetestpeople.com/matthew-mccormick/cucumbertesttemplate.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.thetestpeople.com/matthew-mccormick/courgetteparallelexecutiontemplate/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.thetestpeople.com/matthew-mccormick/cucumbertesttemplate/-/settings/integrations)
 
 ## Collaborate with your team
 
