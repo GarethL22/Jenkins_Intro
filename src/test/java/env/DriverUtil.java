@@ -19,6 +19,7 @@ public class DriverUtil {
     public static void tearDownDriver() {
         if(driver != null) {
             driver.quit();
+            driver = null;
         }
     }
 }

@@ -8,9 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BaseSteps {
 
-    private static final WebDriver driver = DriverUtil.getDefaultDriver();
+    private static WebDriver driver;
 
     public BaseSteps() {
+        driver = DriverUtil.getDefaultDriver();
         PageFactory.initElements(driver, HomePage.class);
         PageFactory.initElements(driver, ProductDisplayPage.class);
     }

@@ -9,20 +9,27 @@ import org.junit.Assert;
 
 public class MySeleniumStepdefs extends BaseSteps {
 
+    HomePage homePage;
+    ProductDisplayPage productDisplayPage;
+
+    public MySeleniumStepdefs() {
+        homePage = new HomePage();
+        productDisplayPage = new ProductDisplayPage();
+    }
 
     @Given("I am on the Automation Practice Homepage")
     public void iAmOnTheAutomationPracticeHomepage() {
-        HomePage.GoToHomePage();
+        homePage.GoToHomePage();
     }
 
     @When("^I click on the (Dresses|T-shirts) button$")
     public void iClickOnTheDressesButton(String category) {
-        HomePage.SelectNavBarCategory(category);
+        homePage.SelectNavBarCategory(category);
     }
 
     @Then("^the (Dresses|T-shirts) page is displayed$")
     public void theDressesPageIsDisplayed(String pageName) {
         System.out.println("Asserting the " + pageName + " page is displayed");
-        Assert.assertEquals(ProductDisplayPage.getCurrentProductPage(), pageName);
+        Assert.assertEquals(productDisplayPage.getCurrentProductPage(), pageName);
     }
 }

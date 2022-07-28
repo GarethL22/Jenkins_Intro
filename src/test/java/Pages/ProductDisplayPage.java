@@ -8,7 +8,7 @@ public class ProductDisplayPage {
     @FindBy(xpath = "//span[@class='category-name']")
     public static WebElement PageName;
 
-    public static String getCurrentProductPage() {
+    public String getCurrentProductPage() {
         return PageName.getText().trim();
     }
 }

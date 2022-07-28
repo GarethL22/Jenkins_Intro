@@ -1,5 +1,5 @@
 @MyFeatureTag
-Feature: CucumberFeature
+Feature: CucumberFeature2
 
   @MyScenarioTag
   Scenario: CucumberTestScenario1
