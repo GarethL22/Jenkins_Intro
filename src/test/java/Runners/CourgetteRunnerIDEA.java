@@ -13,11 +13,10 @@ import org.junit.runner.RunWith;
         rerunFailedScenarios = true,
         rerunAttempts = 1,
         reportTargetDir = "target",
-        classPath = {"target/libs/*", "target/test-classes/"},
         cucumberOptions = @CucumberOptions(
                 features = {"src/test/resources/Features"},
                 glue = {"StepDefinition"},
                 tags = {"@MyFeatureTag"}
         ))
-public class CourgetteRunner {
+public class CourgetteRunnerIDEA {
 }
